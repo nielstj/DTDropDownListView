@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
-@objc protocol DTDropDownListViewDelegate {
+@objc public protocol DTDropDownListViewDelegate {
     optional func DropDownDidSelect(sender : DTDropDownListView, value : AnyObject)
 }
 
-class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
+public class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
     
-    
-    var delegate : DTDropDownListViewDelegate?
+    public var delegate : DTDropDownListViewDelegate?
     
     let kDropDownCellID = "DropDownCell"
     
@@ -28,12 +27,12 @@ class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
     
-    init(sender : UIButton, parent : UIView, height : CGFloat, list : [String], direction : String) {
+    public init(sender : UIButton, parent : UIView, height : CGFloat, list : [String], direction : String) {
         super.init(frame: CGRectMake(0, 0, 0, 0))
         
         let btn = sender.frame
@@ -82,7 +81,7 @@ class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.addSubview(tableView)
     }
     
-    func hideDropDown(sender : UIButton) {
+    public func hideDropDown(sender : UIButton) {
         let btn = sender.frame
         
         UIView.animateWithDuration(0.5, animations: { () -> Void in
@@ -101,11 +100,11 @@ class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listArr.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(kDropDownCellID)
         if(cell == nil) {
             cell = UITableViewCell(style: .Default, reuseIdentifier: kDropDownCellID)
@@ -116,7 +115,7 @@ class DTDropDownListView: UIView, UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if delegate != nil {
             delegate?.DropDownDidSelect!(self, value: listArr[indexPath.row])

@@ -9,17 +9,15 @@
 import UIKit
 import DTDropDownListView
 
-
-class ViewController: UIViewController, DTDropDownListViewDelegate {
+class ViewController: UIViewController , DTDropDownListViewDelegate {
 
     @IBOutlet weak var dropDownBtn : UIButton!
     @IBOutlet weak var dropUpBtn : UIButton!
     
-    
     var dropDownMenu : DTDropDownListView?
     var dropUpMenu : DTDropDownListView?
     
-    let list = ["12345","67890","abcdef","!@#$%^","^&*()","{}|~!@","<>?:","!@#$%^&*()"]
+    let list = ["APPLE","MANGO","BANANA","PINEAPLE","GRAPE","GUAVA","POMEGRANATE", "JACKFRUIT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +44,7 @@ class ViewController: UIViewController, DTDropDownListViewDelegate {
     private func setupDropDownMenu() {
         
         if dropDownMenu == nil {
-            dropDownMenu = DTDropDownListView(sender: dropDownBtn, parent : dropDownBtn.superview ,height:200 , list: list, direction: "down")
+            dropDownMenu = DTDropDownListView(sender: dropDownBtn, parent : dropDownBtn.superview! ,height:200 , list: list, direction: "down")
             dropDownMenu?.delegate = self
         }
         else {
@@ -58,15 +56,27 @@ class ViewController: UIViewController, DTDropDownListViewDelegate {
     
     private func setupDrowUpMenu() {
         if dropUpMenu == nil {
-            dropUpMenu = DTDropDownListView(sender: dropUpBtn, parent : dropUpBtn.superview ,height:200 , list: list, direction: "up")
+            dropUpMenu = DTDropDownListView(sender: dropUpBtn, parent : dropUpBtn.superview! ,height:200 , list: list, direction: "up")
             dropUpMenu?.delegate = self
-            tableView.userInteractionEnabled = false
         }
         else {
-            dropUpMenu!.hideDropDown(dropDownBtn)
+            dropUpMenu!.hideDropDown(dropUpBtn)
             dropUpMenu = nil
         }
     }
+    
+    func DropDownDidSelect(sender: DTDropDownListView, value: AnyObject) {
+        if sender == dropDownMenu {
+            dropBtnTapped(dropDownBtn)
+            dropDownBtn.setTitle(value as? String, forState: .Normal)
+        }
+        else  if sender == dropUpMenu {
+            dropBtnTapped(dropUpBtn)
+            dropUpBtn.setTitle(value as? String, forState: .Normal)
+        }
+    }
+    
+    
     
 
 }
