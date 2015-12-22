@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DTDropDownListView: ebbf962cbc6bc28338c00cb5699077c9d39b4bd5
+  DTDropDownListView: a086a9bfa314f37f3de832c22127a27d7c59ace7
 
 COCOAPODS: 0.39.0

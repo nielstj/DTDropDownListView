@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '34ACAF00E06D2266DE7EB899'
+               BlueprintIdentifier = 'A0ED17157E79304F63735C13'
                BlueprintName = 'DTDropDownListView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DTDropDownListView.framework'>

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0696B4AC0901ABAD29A95CB1A1A1AD3F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8571CF86AFE2B7D549A14C3DC9D3254A /* ReplaceMe.swift */; };
 		289829C8611EE0B36DCDD62F5D32C138 /* Pods-DTDropDownListView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA16070BA08E3166E4296A060E44BB8 /* Pods-DTDropDownListView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335941E0F0CEB5AB03216A857CA241A9 /* DTDropDownListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEF0322FAF480216E2995570C616DE7 /* DTDropDownListView-dummy.m */; };
 		3721777F9B3F337DDF9C4766712AF0DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		49F266B2D098CEA36F45C941D28A3B5F /* Pods-DTDropDownListView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A33D8D1CE9255A69C4E9D922F8282C /* Pods-DTDropDownListView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C0493A464588D2E2F644D07F649183B /* DTDropDownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A85541592E1257BBF5A54875FB24F /* DTDropDownListView.swift */; };
 		4DA2E297124467CFCBFF1462DD302B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		73CD1226D7DE364A37377689E4CF3CED /* DTDropDownListView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEF0322FAF480216E2995570C616DE7 /* DTDropDownListView-dummy.m */; };
 		9EC99D6EC81A1E2D04F203166680F980 /* Pods-DTDropDownListView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84664AB5F9AD6927B116E673E95FB8A6 /* Pods-DTDropDownListView_Tests-dummy.m */; };
 		B1924EC0DA962A6225B5DD5B80313467 /* DTDropDownListView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DC5CAE9776C1448A7889D0AE8EF62B /* DTDropDownListView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC43102929D41381947B674C7AA6DCE8 /* DTDropDownListView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A2B83F355F659232F0DDB16BDE44D32 /* DTDropDownListView.bundle */; };
@@ -65,7 +65,7 @@
 		6FD0C790C5B3652CDF3EF8DED26BF52B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7111328459D0AD77E87E8AEF78C7F41B /* Pods_DTDropDownListView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTDropDownListView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84664AB5F9AD6927B116E673E95FB8A6 /* Pods-DTDropDownListView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DTDropDownListView_Tests-dummy.m"; sourceTree = "<group>"; };
-		8571CF86AFE2B7D549A14C3DC9D3254A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		860A85541592E1257BBF5A54875FB24F /* DTDropDownListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DTDropDownListView.swift; sourceTree = "<group>"; };
 		8E94A46F057634FE72D8CC11163AEBBE /* Pods_DTDropDownListView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTDropDownListView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95060DAB2BF0FA48FAF3330C4EA29D50 /* Pods-DTDropDownListView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DTDropDownListView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF40404D804C93ED7E33D6964D6531DF /* DTDropDownListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DTDropDownListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +155,7 @@
 		40AC362B2AD48DB0119CD22CBC3B6BBA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A77314F8FB92D55543C801F77A08BE6A /* Classes */,
+				D97DFAB46941F74464E6FAB9EA7221B2 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -222,14 +222,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		A77314F8FB92D55543C801F77A08BE6A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8571CF86AFE2B7D549A14C3DC9D3254A /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +236,14 @@
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		D97DFAB46941F74464E6FAB9EA7221B2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				860A85541592E1257BBF5A54875FB24F /* DTDropDownListView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,7 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E44D395E23B3AD651BD8D70A613637 /* Build configuration list for PBXNativeTarget "DTDropDownListView" */;
 			buildPhases = (
-				AFD9AE1205CD010243F5B1EF2ED99F17 /* Sources */,
+				66704E2BA29FDCBF43C52CC82B532B7D /* Sources */,
 				9D20DDE535760B92D076097541F24012 /* Frameworks */,
 				24EFBF9EEA3515495844777C1563F887 /* Resources */,
 				334D260E55DE13DF8561D728C54693F8 /* Headers */,
@@ -403,6 +403,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66704E2BA29FDCBF43C52CC82B532B7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335941E0F0CEB5AB03216A857CA241A9 /* DTDropDownListView-dummy.m in Sources */,
+				4C0493A464588D2E2F644D07F649183B /* DTDropDownListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9FC5A2F77193DA5C1EA959CEB270F104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,15 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EC99D6EC81A1E2D04F203166680F980 /* Pods-DTDropDownListView_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFD9AE1205CD010243F5B1EF2ED99F17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73CD1226D7DE364A37377689E4CF3CED /* DTDropDownListView-dummy.m in Sources */,
-				0696B4AC0901ABAD29A95CB1A1A1AD3F /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
