@@ -1,0 +1,14 @@
+PODS:
+  - DTDropDownListView (0.1.0)
+
+DEPENDENCIES:
+  - DTDropDownListView (from `../`)
+
+EXTERNAL SOURCES:
+  DTDropDownListView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DTDropDownListView: ebbf962cbc6bc28338c00cb5699077c9d39b4bd5
+
+COCOAPODS: 0.39.0

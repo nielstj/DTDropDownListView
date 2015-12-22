@@ -1,0 +1,6 @@
+framework module Pods_DTDropDownListView_Example {
+  umbrella header "Pods-DTDropDownListView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
