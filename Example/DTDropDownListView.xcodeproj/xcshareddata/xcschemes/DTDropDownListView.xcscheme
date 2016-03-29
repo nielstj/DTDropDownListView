@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "DTDropDownListView_Example.app"
-               BlueprintName = "DTDropDownListView_Example"
-               ReferencedContainer = "container:DTDropDownListView.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "DTDropDownListView_Tests.xctest"
-               BlueprintName = "DTDropDownListView_Tests"
+               BlueprintIdentifier = "650E4CA31CAA126E0071D731"
+               BuildableName = "DTDropDownListView.framework"
+               BlueprintName = "DTDropDownListView"
                ReferencedContainer = "container:DTDropDownListView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "DTDropDownListView_Tests.xctest"
-               BlueprintName = "DTDropDownListView_Tests"
+               BlueprintIdentifier = "650E4CAC1CAA126E0071D731"
+               BuildableName = "DTDropDownListViewTests.xctest"
+               BlueprintName = "DTDropDownListViewTests"
                ReferencedContainer = "container:DTDropDownListView.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DTDropDownListView_Example.app"
-            BlueprintName = "DTDropDownListView_Example"
+            BlueprintIdentifier = "650E4CA31CAA126E0071D731"
+            BuildableName = "DTDropDownListView.framework"
+            BlueprintName = "DTDropDownListView"
             ReferencedContainer = "container:DTDropDownListView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DTDropDownListView_Example.app"
-            BlueprintName = "DTDropDownListView_Example"
+            BlueprintIdentifier = "650E4CA31CAA126E0071D731"
+            BuildableName = "DTDropDownListView.framework"
+            BlueprintName = "DTDropDownListView"
             ReferencedContainer = "container:DTDropDownListView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DTDropDownListView_Example.app"
-            BlueprintName = "DTDropDownListView_Example"
+            BlueprintIdentifier = "650E4CA31CAA126E0071D731"
+            BuildableName = "DTDropDownListView.framework"
+            BlueprintName = "DTDropDownListView"
             ReferencedContainer = "container:DTDropDownListView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
